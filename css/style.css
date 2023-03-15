@@ -578,7 +578,21 @@ body{
     transition: 0.4s ease-in-out;
 
 }
-.anchor-div:hover a{
+.anchor-divs{
+    text-decoration: none;
+color: white;
+text-align: center;
+padding: 10px 20px;
+border: 1px solid #828282;
+transition: 0.4s ease-in-out;
+
+}
+.anchor-divs:hover a{
+    background-color: #e54209;
+    border: transparent;
+
+}
+.anchor-div a:hover {
     background-color: #e54209;
     border: transparent;
 
@@ -1440,9 +1454,11 @@ img{
     background-color: #ffffff;
     border-radius: 50%;
     position: absolute;
+    top: 40% !important;
     left: 20%;
     text-align: center;
-    top: 50%;
+ 
+    /* transform: translate(-50%,-50%); */
 
 }
 
@@ -1791,6 +1807,12 @@ services page start
   .active:after {
     content: "\2212";
   }
+.mission.active{
+    background: transparent;
+}
+/* .tab-content .mission.active.active{
+    background-color: transparent;
+  } */
 /*==================================================================================================================
 services page end
 =====================================================================================================================*/
